@@ -1,0 +1,141 @@
+.MainContentTitle h3,
+.dxeBase_Mulberry.Title {
+  font-family: "Times New Roman", Times, serif; /* Font Times New Roman hoặc Times */
+  font-weight: bold; /* In đậm */
+  color: red; /* Màu đỏ */
+  font-size: 14px; /* Kích thước font 14px */
+}
+
+.dxeBase_Mulberry strong {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.dxeBase_Mulberry span {
+
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold; /* In đậm */
+    font-size: 12px;
+}
+
+/* bóng đổ cho ảnh */
+.MainContent .row .dxpnlControl_Mulberry.center {
+    text-align: center; /* Căn giữa nội dung trong div */
+}
+
+.MainContent .row .dxeImage_Mulberry {
+    width: 200px; /* Độ rộng của ảnh */
+    display: block; /* Hiển thị ảnh dưới dạng khối để có thể căn lề */
+    margin: 0 auto; /* Căn giữa ảnh */
+    position: relative; /* Đặt vị trí tương đối cho ảnh để áp dụng bóng đổ */
+}
+
+/* Áp dụng bóng đổ bên phải cho ảnh */
+.MainContent .row .dxeImage_Mulberry::after {
+    content: ""; /* Tạo một phần tử giả để áp dụng bóng đổ */
+    position: absolute;
+    top: 0;
+    right: -10px; /* Điều chỉnh giá trị này để kiểm soát độ lớn của bóng đổ */
+    bottom: 0;
+    width: 10px; /* Điều chỉnh độ rộng của bóng đổ */
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5)); /* Gradient bóng đổ */
+}
+.image-container {
+    position: relative;
+    width: 200px; /* Độ rộng của ảnh */
+}
+
+.image-container::after {
+    content: ""; /* Tạo một phần tử giả để áp dụng bóng đổ */
+    position: absolute;
+    top: 0;
+    right: -10px; /* Điều chỉnh giá trị này để kiểm soát độ lớn của bóng đổ */
+    bottom: 0;
+    width: 10px; /* Điều chỉnh độ rộng của bóng đổ */
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5)); /* Gradient bóng đổ */
+}
+
+.dxeImage_Mulberry {
+    width: 200px; /* Độ rộng của ảnh */
+    display: block; /* Hiển thị ảnh dưới dạng khối để có thể căn lề */
+    margin: 0 auto; /* Căn giữa ảnh */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ (điều chỉnh giá trị tùy ý) */
+}
+
+/* Đổi kích thước biểu tượng thành 18px */
+.bi-pencil-square {
+    fill: black;
+    width: 18px;
+    height: 18px;
+}
+
+/* CSS cho font size của h3 */
+.l39contentLeft h3 {
+    font-size: 14px;
+}
+
+/* CSS cho background của từng l39contentLeft */
+.l39contentLeft {
+    background-color: #f0f0f0; /* Màu nền xám */
+    padding: 10px; /* Khoảng cách giữa các l39contentLeft */
+    margin-bottom: 20px; /* Khoảng cách giữa từng l39contentLeft */
+    border-radius: 5px; /* Góc bo tròn */
+}
+
+.siteMap li {
+    font-size: 12px;
+    list-style: none;
+
+}
+
+/* Ẩn menu con ban đầu */
+.cosub .subSitemap {
+    display: none;
+}
+
+/* Định dạng menu con khi hover vào <a> trong .cosub */
+.cosub a:hover + .subSitemap,
+.cosub .subSitemap:hover {
+    display: block;
+}
+
+/* Định dạng mục con trong submenu */
+.cosub .subSitemap li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+    margin-left: -30px; /* Điều chỉnh giá trị âm để kéo về phía trái */
+}
+
+/* Thêm hiệu ứng hover cho mục con trong submenu */
+.cosub .subSitemap li:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+br {
+    color: #ccc; /* Chọn màu xám bằng cách đặt mã màu (#ccc) hoặc bất kỳ mã màu xám nào bạn muốn. */
+}
+
+.row hr {
+    line-height: 4px;
+    border: 3px solid #FF9900;
+    display: block;
+    width: 100%;
+}
+
+/* CSS cho form chỉnh sửa */
+.edit-form {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* CSS cho icon bi-pencil-square */
+#editButton {
+    cursor: pointer;
+}
